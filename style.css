@@ -8,7 +8,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .clearfix:after {
@@ -37,6 +42,7 @@ body {
     height: 74px;
     margin: 0 auto;
     padding: 0 10%;
+    border-bottom: 1px solid #cbd6e2;
 }
 
 #navbar_inner {
@@ -48,30 +54,88 @@ body {
 }
 
 #upper_left {
-    background-color: red;
     float: left;
     line-height: 74px;
 }
 
+#upper_left #wrapper:hover {
+    cursor: pointer;
+}
+
+/* spazio e stilo i 5 elementi della barra di sinistra */
+#upper_left #wrapper span:nth-child(1) {
+    color: #33475b;
+}
+
+#upper_left #wrapper span:nth-child(2) {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#upper_left #wrapper span:nth-child(3) {
+    color: #7c98b6;
+    padding-right: 15px;
+}
+
+#wrapper+span {
+    font-weight: 900;
+    font-size: 22px;
+    color: #cbd6e2;
+}
+
+#upper_left span:last-child {
+    padding-left: 15px;
+    font-size: 14px;
+}
+
 #upper_right {
-    background-color: blue;
     float: right;
     line-height: 74px;
 }
 
+#upper_right span i {
+    color: #34b5ca;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+/* spazio i 2 bottoni  */
+#upper_right span:nth-child(2) {
+    padding-right: 10px;
+}
+
+/* stilo il bottone di login*/
+#upper_right span:nth-child(2) button {
+    background-color: #ffffff;
+    padding: 9px 16px;
+    color: #ff7a59;
+    border: 1px solid #ff7a59;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* stilo il bottone di cta*/
+#upper_right span:nth-child(3) button {
+    background-color: #ff7a59;
+    padding: 9px 16px;
+    color: #ffffff;
+    border: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 #inner_left {
-    background-color: green;
     float: left;
 }
 
 #inner_left img {
-    /* sposto l'immagine versoo il basso per centrarla */
+    /* sposto l'immagine versoo il basso per centrarla verticalmente  */
     position: relative;
     top: 26px;
 }
 
 #inner_right {
-    background-color: purple;
     float: right;
     line-height: 82px;
 }
@@ -84,16 +148,34 @@ body {
     display: inline-block;
     padding: 0 10px;
     margin: 0;
+    font-weight: bold;
+}
+
+#inner_right ul li {
+    cursor: pointer;
+}
+
+#inner_right span {
+    color: #7c98b6;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+#inner_right a {
+    padding-right: 15px;
 }
 
 #jumbo {
     background-color: #fff2ee;
     background-image: url("images/background_trasp_houses.png");
-    /* background-position: center; */
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
     height: 800px;
+}
+
+#jumbo h1 {
+    margin-top: 0;
 }
 
 footer {
