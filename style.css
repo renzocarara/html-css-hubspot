@@ -33,6 +33,7 @@ a {
     height: 57px;
     padding-top: 12px;
     border-radius: 45px;
+    cursor: pointer;
 }
 
 #chat_icon:hover {
@@ -45,7 +46,7 @@ a {
     height: 1500px;
 }
 
-.stripe {
+.stripe_wrapper {
     width: 100%;
     padding: 0 10%;
     margin: 0 auto;
@@ -151,7 +152,7 @@ a {
 }
 
 #inner_left img {
-    /* sposto l'immagine versoo il basso per centrarla verticalmente  */
+    /* sposto l'immagine verso il basso per centrarla verticalmente  */
     position: relative;
     top: 26px;
     /* right: 210px; */
@@ -193,9 +194,15 @@ a {
 #jumbo {
     background-color: #fff2ee;
     background-image: url("images/background_trasp_houses.png");
-    background-size: 120%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 630px;
+    /* fisso l'immagine di sfondo grande come la viewport */
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 3px solid #33475b;
+    /* position: relative; */
 }
 
 #jumbo h1 {
@@ -206,8 +213,13 @@ a {
 }
 
 .jumbo_wrapper {
+    border: 1px solid black;
     width: 50%;
     padding-top: 40px;
+    /* position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%); */
 }
 
 .jumbo_wrapper p {
@@ -231,6 +243,55 @@ a {
 
 #cta_wrapper {
     width: 40%;
+}
+
+/* ******************************************** */
+/* ****************** sect1 ******************* */
+/* ******************************************** */
+#sect1 {
+    text-align: center;
+}
+
+#sect1 img {
+    width: 260;
+    height: 194px;
+    margin-top: 100px;
+}
+
+#sect1 h2 {
+    font-size: 32px;
+}
+
+#sect1 p {
+    padding: 0 100px;
+    line-height: 1.5;
+}
+
+/* ******************************************** */
+/* ****************** sect2 ******************* */
+/* ******************************************** */
+#sect2 {
+    /* text-align: center; */
+    background-color: lightyellow;
+}
+
+.sect2_row {
+    background-color: lightcyan;
+    margin-bottom: 50px;
+    /* border: 1px solid black; */
+}
+
+.sect2_col {
+    display: inline-block;
+    width: 31.15%;
+    background-color: lightpink;
+    /* border: 1px solid black; */
+}
+
+#sect2 div:nth-child(3) {
+    color: red;
+    /* do' margini alla colonna centrale per spaziarla */
+    margin: 0 3%;
 }
 
 /* ******************************************** */
