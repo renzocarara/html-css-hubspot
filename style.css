@@ -6,10 +6,10 @@
 }
 
 body {
+    font-family: 'Lato', sans-serif;
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
     color: #33475b;
 }
 
@@ -156,6 +156,11 @@ a {
     font-weight: normal;
 }
 
+.hr-styled {
+    border-top: 1px solid #e0e6ed;
+    border-bottom: 0;
+}
+
 /* ******************************************** */
 /* *************** navbar inner *************** */
 /* ******************************************** */
@@ -290,6 +295,23 @@ a {
     padding: 30px;
 }
 
+/* #sect2-row-right div {
+    position: relative;
+}
+
+#sect2-row-right div p {
+    text-align: left;
+}
+
+#sect2-row-right div p::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    margin-left: 10px;
+    border-top: 1px solid #e0e6ed;
+    top: 10px;
+    width: 70%;
+} */
 /* da rivedere: per implementare movimento su assi x-y */
 .sect2-panel:hover {
     box-shadow: 2px 5px 10px #888888;
@@ -320,9 +342,9 @@ a {
 }
 
 #sect2-row-left img {
-    width: 206px;
-    height: 150px;
-    margin-bottom: 40px;
+    width: 177px;
+    height: 130px;
+    margin-bottom: 15px;
 }
 
 #sect2 ul {
@@ -337,16 +359,14 @@ a {
 }
 
 /* solo per la lista in sect2-row-right */
-#sect2-row-right {
+#sect2-row-right ul li {
     display: inline-block;
 }
 
-/* da rivedere */
-/* HACK -- creo dello spazio tra l'icona "checked" e il testo */
-/* e poi inserisco un carattere e lo rendo invisibile */
+/* metto del margine tra l'icona "checked" e il testo */
 #sect2 ul li i::after {
-    content: "\2713";
-    visibility: hidden;
+    margin: 5px;
+    content: "";
 }
 
 .sect2_col img {
@@ -366,6 +386,28 @@ a {
 /* ******************************************** */
 /* ****************** sect3 ******************* */
 /* ******************************************** */
+#sect3 {
+    width: 100%;
+    color: white;
+    height: 800px;
+    padding: 100px 0;
+    background-image: linear-gradient(#00aeb4, #00bda5);
+}
+
+#sect3 .container h2 {
+    font-size: 32px;
+    text-align: center;
+    padding: 0 140px;
+}
+
+#sect3 .container p {
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 100px;
+}
+
 /* ******************************************** */
 /* ****************** sect4 ******************* */
 /* ******************************************** */
