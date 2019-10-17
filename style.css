@@ -10,11 +10,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    color: #33475b;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.fa-check-circle {
+    color: #ff7a59;
+    background-color: white;
 }
 
 .clearfix:after {
@@ -72,7 +78,7 @@ a {
 
 /* spazio e stilo i 5 elementi della barra di sinistra */
 #upper_left #wrapper span:nth-child(1) {
-    color: #33475b;
+    /* color: #33475b; */
 }
 
 #upper_left #wrapper span:nth-child(2) {
@@ -145,7 +151,7 @@ a {
     font-weight: normal;
 }
 
-/* bottone cta a fianco alogin */
+/* bottone cta a fianco al login */
 #upper_right span:nth-child(3) button {
     font-weight: normal;
 }
@@ -215,33 +221,23 @@ a {
     max-width: 100%;
     width: 100vw;
     height: 100vh;
-    border-bottom: 3px solid #33475b;
-    /* position: relative; */
+    border-bottom: 3px solid;
 }
 
 #jumbo h1 {
-    /* margin-top: 0; */
     font-size: 60px;
     font-weight: 700;
-    color: #33475b;
 }
 
 .jumbo_wrapper {
     width: 50%;
     padding-top: 40px;
-    /* position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%); */
 }
 
 .jumbo_wrapper p {
     line-height: 1.5;
 }
 
-/* .jumbo_wrapper button {
-    white-space: nowrap;
-} */
 .jumbo_wrapper p:last-child {
     font-size: 12px;
     line-height: 1.5;
@@ -259,7 +255,7 @@ a {
 }
 
 #sect1 img {
-    width: 260;
+    width: 260px;
     height: 194px;
     margin-top: 100px;
 }
@@ -278,26 +274,93 @@ a {
 /* ******************************************** */
 #sect2 {
     /* text-align: center; */
-    background-color: lightyellow;
+    background-color: #f9f9f9;
+}
+
+.sect2-panel {
+    line-height: 1.5;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: 2px 5px 10px #f2f2f2;
+    background-color: white;
 }
 
 .sect2_row {
-    background-color: lightcyan;
     margin-bottom: 50px;
-    /* border: 1px solid black; */
+    padding: 30px;
+}
+
+/* da rivedere: per implementare movimento su assi x-y */
+.sect2-panel:hover {
+    box-shadow: 2px 5px 10px #888888;
+    /* width: 5%; */
+}
+
+.sect2_col {
+    float: left;
+    width: 30%;
+    background-color: white;
+    padding: 30px;
+}
+
+#sect2 div:nth-child(3) {
+    /* do' margini alla colonna centrale per spaziarla */
+    margin: 0 5%;
+}
+
+#sect2-row-left {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+}
+
+#sect2-row-right {
+    width: 59%;
+    display: inline-block;
+}
+
+#sect2-row-left img {
+    width: 206px;
+    height: 150px;
+    margin-bottom: 40px;
+}
+
+#sect2 ul {
+    text-align: left;
+    padding-left: 0;
+}
+
+/* per tutte le liste in #sect2 */
+#sect2 ul li {
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+/* solo per la lista in sect2-row-right */
+#sect2-row-right {
+    display: inline-block;
+}
+
+/* da rivedere */
+/* HACK -- creo dello spazio tra l'icona "checked" e il testo */
+/* e poi inserisco un carattere e lo rendo invisibile */
+#sect2 ul li i::after {
+    content: "\2713";
+    visibility: hidden;
+}
+
+.sect2_col img {
+    width: 234px;
+    height: 150px;
+}
+
+#sect2 .container:first-child {
+    margin-bottom: 80px;
 }
 
 .sect2_col {
     display: inline-block;
-    width: 31.15%;
-    background-color: lightpink;
-    /* border: 1px solid black; */
-}
-
-#sect2 div:nth-child(3) {
-    color: red;
-    /* do' margini alla colonna centrale per spaziarla */
-    margin: 0 3%;
+    text-align: center;
 }
 
 /* ******************************************** */
@@ -316,4 +379,5 @@ footer {
     width: 100%;
     height: 200px;
     background-color: #33475b;
+    color: white;
 }
