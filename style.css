@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
@@ -40,15 +41,9 @@ a {
     box-shadow: 2px 5px 10px #888888;
 }
 
+/* contenitore generico che mi dimensiona "il contenuto" all'80% della larghezza */
 .container {
-    background-color: #f9f9f9;
-    width: 100%;
-    height: 1500px;
-}
-
-.stripe_wrapper {
-    width: 100%;
-    padding: 0 10%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -56,6 +51,7 @@ a {
 /* *************** navbar upper *************** */
 /* ******************************************** */
 #navbar_upper {
+    width: 100%;
     background-color: #f9f9f9;
     height: 74px;
     border-bottom: 1px solid #cbd6e2;
@@ -87,6 +83,7 @@ a {
 #upper_left #wrapper span:nth-child(3) {
     color: #7c98b6;
     padding-right: 15px;
+    font-size: 18px;
 }
 
 #wrapper+span {
@@ -117,24 +114,40 @@ a {
     padding-right: 10px;
 }
 
+.btn-small {
+    padding: 9px 16px;
+}
+
+.btn-medium {
+    padding: 12px 24px;
+}
+
+.btn-large {
+    padding: 26px 48px;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #ff7a59;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    /* con il bold testo lungo tende a disposrsi su 2 linee */
+    white-space: nowrap;
+}
+
 /* stilo il bottone di login*/
 #upper_right span:nth-child(2) button {
     background-color: #ffffff;
-    padding: 9px 16px;
     color: #ff7a59;
     border: 1px solid #ff7a59;
-    border-radius: 3px;
-    cursor: pointer;
+    font-weight: normal;
 }
 
-/* stilo il bottone di cta*/
+/* bottone cta a fianco alogin */
 #upper_right span:nth-child(3) button {
-    background-color: #ff7a59;
-    padding: 9px 16px;
-    color: #ffffff;
-    border: 5px;
-    border-radius: 3px;
-    cursor: pointer;
+    font-weight: normal;
 }
 
 /* ******************************************** */
@@ -182,6 +195,7 @@ a {
     color: #7c98b6;
     padding-right: 15px;
     padding-left: 10px;
+    font-size: 18px;
 }
 
 #inner_right a {
@@ -189,7 +203,7 @@ a {
 }
 
 /* ******************************************** */
-/* ****************** jumbo ******************* */
+/* ************* jumbo section **************** */
 /* ******************************************** */
 #jumbo {
     background-color: #fff2ee;
@@ -213,7 +227,6 @@ a {
 }
 
 .jumbo_wrapper {
-    border: 1px solid black;
     width: 50%;
     padding-top: 40px;
     /* position: absolute;
@@ -226,16 +239,9 @@ a {
     line-height: 1.5;
 }
 
-.jumbo_wrapper button {
-    background-color: #ff7a59;
-    padding: 22px 36px;
-    color: #ffffff;
-    border: 5px;
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
+/* .jumbo_wrapper button {
+    white-space: nowrap;
+} */
 .jumbo_wrapper p:last-child {
     font-size: 12px;
     line-height: 1.5;
@@ -294,6 +300,15 @@ a {
     margin: 0 3%;
 }
 
+/* ******************************************** */
+/* ****************** sect3 ******************* */
+/* ******************************************** */
+/* ******************************************** */
+/* ****************** sect4 ******************* */
+/* ******************************************** */
+/* ******************************************** */
+/* ****************** sect5 ******************* */
+/* ******************************************** */
 /* ******************************************** */
 /* ****************** footer ******************* */
 /* ******************************************** */
