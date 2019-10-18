@@ -280,6 +280,7 @@ a {
 #sect2 {
     /* text-align: center; */
     background-color: #f9f9f9;
+    padding-bottom: 40px;
 }
 
 .sect2-panel {
@@ -312,7 +313,7 @@ a {
     top: 10px;
     width: 70%;
 } */
-/* da rivedere: per implementare movimento su assi x-y */
+/* da rivedere: per implementare movimento su assi x-y? */
 .sect2-panel:hover {
     box-shadow: 2px 5px 10px #888888;
     /* width: 5%; */
@@ -406,6 +407,24 @@ a {
     font-weight: bold;
     text-align: center;
     padding: 0 100px;
+}
+
+.square {
+    border: 1px solid white;
+    width: 25%;
+    float: left;
+    height: 200px;
+    text-align: center;
+    padding: 30px;
+}
+
+.square img {
+    height: 33px;
+}
+
+.square p {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
 }
 
 /* ******************************************** */
