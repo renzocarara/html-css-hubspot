@@ -31,7 +31,7 @@ a {
 }
 
 #chat_icon {
-    background-color: gray;
+    background-color: #425b76;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -42,12 +42,10 @@ a {
     padding-top: 12px;
     border-radius: 45px;
     cursor: pointer;
-    /* copiato dal sito originale */
     box-shadow: 0 1px 6px rgba(0, 0, 0, .1), 0 2px 24px rgba(0, 0, 0, .2);
 }
 
 #chat_icon:hover {
-    /* copiato dal sito originale */
     box-shadow: 0 2px 10px rgba(0, 0, 0, .2), 0 4px 28px rgba(0, 0, 0, .3);
 }
 
@@ -185,10 +183,9 @@ a {
 }
 
 #inner_left img {
-    /* sposto l'immagine verso il basso per centrarla verticalmente  */
+    /* sposto l'immagine logo verso il basso per centrarla verticalmente  */
     position: relative;
     top: 26px;
-    /* right: 210px; */
 }
 
 #inner_right {
@@ -301,7 +298,7 @@ a {
     background-color: white;
 }
 
-/* effetto spostamento X-Y all'hover  sui pannelli */
+/* effetto spostamento X-Y all'hover sui pannelli */
 .sect2-panel:hover {
     box-shadow: 0 10px 50px -5px rgba(51, 71, 91, 0.12);
     transform: scale(1.014);
@@ -318,7 +315,7 @@ a {
     position: relative;
 }
 
-/* barra orizzontale che "segue" (after) il testo del paragrafo */
+/* linea orizzontale che "segue" (:after) il testo del paragrafo */
 #sect2-row-right p:nth-child(3)::after {
     content: '';
     margin-left: 10px;
@@ -362,13 +359,11 @@ a {
     padding-left: 0;
 }
 
-/* per tutte le liste in #sect2 */
 #sect2 ul li {
     list-style-type: none;
     padding-right: 10px;
 }
 
-/* solo per la lista in sect2-row-right */
 #sect2-row-right ul li {
     display: inline-block;
 }
@@ -445,7 +440,7 @@ a {
     content: "+";
     font-size: 16px;
     font-weight: normal;
-    /* riposiziono  il simbolo un po più in alto per centrarlo */
+    /* riposiziono  il simbolo un po' più in alto per centrarlo */
     position: relative;
     bottom: 8px;
 }
@@ -612,6 +607,7 @@ a {
 
 #sect5-left p:nth-child(4) {
     font-size: 12px;
+    color: #516f90;
 }
 
 /* ******************************************** */
@@ -619,7 +615,102 @@ a {
 /* ******************************************** */
 footer {
     width: 100%;
-    height: 200px;
+    height: 700px;
+    padding-top: 92px;
     background-color: #33475b;
     color: white;
+}
+
+footer li {
+    list-style-type: none;
+    text-transform: capitalize;
+    padding-right: 25px;
+}
+
+.footer-col ul:nth-child(4) li {
+    display: inline-block;
+}
+
+.footer-col {
+    width: 25%;
+    float: left;
+    padding: 16px;
+}
+
+.footer-col ul {
+    margin-top: 5px;
+}
+
+.footer-col li {
+    color: #cbd6e2;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.footer-col h4 {
+    margin-bottom: 5px;
+}
+
+.footer-col span {
+    padding-right: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-col ul li:last-child {
+    color: white;
+}
+
+/* seleziono il div che contiene il bottone */
+.footer-col div:nth-child(3) {
+    padding-bottom: 10px;
+}
+
+.footer-col button {
+    background-color: #ffffff;
+    color: #33475b;
+    font-weight: normal;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+#footer_languages {
+    text-align: center;
+    border-bottom: 1px solid #7c98b6;
+    padding: 25px 0;
+}
+
+#footer_languages li {
+    text-align: center;
+    display: inline-block;
+}
+
+#footer-legal {
+    padding-top: 35px;
+}
+
+#footer-legal img {
+    width: 100px;
+    height: 28px;
+}
+
+#footer-legal-left {
+    float: left;
+}
+
+#footer-legal-right a {
+    padding-left: 40px;
+    margin-right: 5px;
+    float: left;
+}
+
+footer a:hover {
+    color: #7fd1de;
+}
+
+#footer-legal-right {
+    float: right;
 }
