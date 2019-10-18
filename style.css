@@ -80,6 +80,11 @@ a {
     margin: 0 auto;
 }
 
+.container-smaller {
+    width: 71.34%;
+    margin: 0 auto;
+}
+
 /* ******************************************** */
 /* *************** navbar upper *************** */
 /* ******************************************** */
@@ -458,6 +463,11 @@ a {
     height: 33px;
 }
 
+/* questa è l'unica immagine con altezza diversa rispetto alle altre */
+#square8 img {
+    height: 23px;
+}
+
 #square1 {
     border-left: 0;
     border-top: 0;
@@ -494,7 +504,75 @@ a {
 /* ****************** sect4 ******************* */
 /* ******************************************** */
 #sect4 {
+    padding: 100px 0 120px;
     /* background-color: white; */
+}
+
+#sect4 .panel-left {
+    float: left;
+    width: 30%;
+}
+
+#sect4 .panel-left h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+#sect4 .panel-left p {
+    font-size: 18px;
+    line-height: 1.5;
+    /* un po' più di spazio fra le lettere per copiare il font originale */
+    letter-spacing: 0.1em;
+}
+
+#sect4 .panel-right {
+    float: left;
+    width: 70%;
+}
+
+#sect4 .box {
+    float: left;
+    width: 25%;
+    height: 80px;
+    text-align: center;
+    padding: 20px 10px 10px;
+}
+
+.box img {
+    width: 110px;
+}
+
+#box1 img {
+    height: 14px;
+}
+
+#box2 img {
+    height: 13px;
+}
+
+#box3 img {
+    height: 30px;
+}
+
+#box4 img {
+    height: 35px;
+}
+
+#box5 img {
+    height: 37px;
+}
+
+#box6 img {
+    height: 18px;
+}
+
+#box7 img {
+    height: 44px;
+}
+
+#box8 img {
+    height: 24px;
 }
 
 /* ******************************************** */
