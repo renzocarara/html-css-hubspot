@@ -33,8 +33,8 @@ a {
 #chat_icon {
     background-color: gray;
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    right: 15px;
+    bottom: 15px;
     text-align: center;
     display: inline-block;
     width: 59px;
@@ -104,21 +104,21 @@ a {
     line-height: 74px;
 }
 
-#upper_left #wrapper:hover {
+#wrapper:hover {
     cursor: pointer;
 }
 
 /* spazio e stilo i 5 elementi della barra di sinistra */
-#upper_left #wrapper span:nth-child(1) {
+#wrapper span:nth-child(1) {
     /* color: #33475b; */
 }
 
-#upper_left #wrapper span:nth-child(2) {
+#wrapper span:nth-child(2) {
     padding-left: 10px;
     font-size: 14px;
 }
 
-#upper_left #wrapper span:nth-child(3) {
+#wrapper span:nth-child(3) {
     color: #7c98b6;
     padding-right: 15px;
     font-size: 18px;
@@ -290,6 +290,7 @@ a {
     /* text-align: center; */
     background-color: #f9f9f9;
     padding-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .sect2-panel {
@@ -398,7 +399,6 @@ a {
 #sect3 {
     width: 100%;
     color: white;
-    height: 800px;
     padding: 100px 0;
     background-image: linear-gradient(45deg, #00a4bd, #00bda5);
 }
@@ -436,12 +436,12 @@ a {
     text-align: center;
 }
 
-#sect3-table #square1 h2:after,
-#sect3-table #square2 h2:after,
-#sect3-table #square3 h2:after,
-#sect3-table #square5 h2:after,
-#sect3-table #square7 h2:after,
-#sect3-table #square8 h2:after {
+#square1 h2:after,
+#square2 h2:after,
+#square3 h2:after,
+#square5 h2:after,
+#square7 h2:after,
+#square8 h2:after {
     content: "+";
     font-size: 16px;
     font-weight: normal;
@@ -454,7 +454,6 @@ a {
     border: 1px solid white;
     width: 25%;
     float: left;
-    height: 200px;
     text-align: center;
     padding: 30px;
 }
@@ -505,30 +504,29 @@ a {
 /* ******************************************** */
 #sect4 {
     padding: 100px 0 120px;
-    /* background-color: white; */
+    background-color: white;
 }
 
-#sect4 .panel-left {
+#sect4-left {
     float: left;
     width: 30%;
 }
 
-#sect4 .panel-left h2 {
+#sect4-left h2 {
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: bold;
     margin: 0;
 }
 
-#sect4 .panel-left p {
+#sect4-left p {
     font-size: 18px;
     line-height: 1.5;
-    /* un po' più di spazio fra le lettere per copiare il font originale */
-    letter-spacing: 0.1em;
 }
 
-#sect4 .panel-right {
+#sect4-right {
     float: left;
     width: 70%;
+    padding-left: 30px;
 }
 
 #sect4 .box {
@@ -578,6 +576,44 @@ a {
 /* ******************************************** */
 /* ****************** sect5 ******************* */
 /* ******************************************** */
+#sect5 {
+    background-color: white;
+    padding-bottom: 120px;
+}
+
+#sect5-left {
+    float: left;
+    width: 45%;
+}
+
+#sect5-left h2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+#sect5-left p {
+    line-height: 1.5;
+}
+
+#sect5-right {
+    float: left;
+    width: 55%;
+    text-align: right;
+}
+
+#sect5-right img {
+    width: 350px;
+    height: 426px;
+}
+
+#sect5-left button {
+    margin: 10px 0;
+}
+
+#sect5-left p:nth-child(4) {
+    font-size: 12px;
+}
+
 /* ******************************************** */
 /* ****************** footer ******************* */
 /* ******************************************** */
