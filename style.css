@@ -6,11 +6,11 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #33475b;
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    color: #33475b;
 }
 
 a {
@@ -18,6 +18,7 @@ a {
     color: inherit;
 }
 
+/* customizzo icona di fontawesome */
 .fa-check-circle {
     color: #ff7a59;
     background-color: white;
@@ -41,10 +42,36 @@ a {
     padding-top: 12px;
     border-radius: 45px;
     cursor: pointer;
+    /* copiato dal sito originale */
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .1), 0 2px 24px rgba(0, 0, 0, .2);
 }
 
 #chat_icon:hover {
-    box-shadow: 2px 5px 10px #888888;
+    /* copiato dal sito originale */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2), 0 4px 28px rgba(0, 0, 0, .3);
+}
+
+.btn-small {
+    padding: 9px 16px;
+}
+
+.btn-medium {
+    padding: 12px 24px;
+}
+
+.btn-large {
+    padding: 26px 48px;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #ff7a59;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    /* con il bold testo lungo tende a disposrsi su 2 linee */
+    white-space: nowrap;
 }
 
 /* contenitore generico che mi dimensiona "il contenuto" all'80% della larghezza */
@@ -115,32 +142,9 @@ a {
     margin-right: 25px;
 }
 
-/* spazio i 2 bottoni  */
+/* spazio i 2 bottoni  login e cta*/
 #upper_right span:nth-child(2) {
     padding-right: 10px;
-}
-
-.btn-small {
-    padding: 9px 16px;
-}
-
-.btn-medium {
-    padding: 12px 24px;
-}
-
-.btn-large {
-    padding: 26px 48px;
-}
-
-.btn {
-    color: #ffffff;
-    background-color: #ff7a59;
-    border: 1px solid;
-    border-radius: 3px;
-    cursor: pointer;
-    font-weight: bold;
-    /* con il bold testo lungo tende a disposrsi su 2 linee */
-    white-space: nowrap;
 }
 
 /* stilo il bottone di login*/
@@ -291,32 +295,31 @@ a {
     background-color: white;
 }
 
+/* effetto spostamento X-Y all'hover  sui pannelli */
+.sect2-panel:hover {
+    box-shadow: 0 10px 50px -5px rgba(51, 71, 91, 0.12);
+    transform: scale(1.014);
+    /* leggero ritardo */
+    transition: 0.3s ease-in-out;
+}
+
 .sect2_row {
     margin-bottom: 50px;
     padding: 30px;
 }
 
-/* #sect2-row-right div {
+#sect2-row-right p {
     position: relative;
 }
 
-#sect2-row-right div p {
-    text-align: left;
-}
-
-#sect2-row-right div p::after {
+/* barra orizzontale che "segue" (after) il testo del paragrafo */
+#sect2-row-right p:nth-child(3)::after {
     content: '';
-    position: absolute;
-    height: 1px;
     margin-left: 10px;
     border-top: 1px solid #e0e6ed;
+    position: absolute;
     top: 10px;
-    width: 70%;
-} */
-/* da rivedere: per implementare movimento su assi x-y? */
-.sect2-panel:hover {
-    box-shadow: 2px 5px 10px #888888;
-    /* width: 5%; */
+    width: 60%;
 }
 
 .sect2_col {
@@ -327,7 +330,7 @@ a {
 }
 
 #sect2 div:nth-child(3) {
-    /* do' margini alla colonna centrale per spaziarla */
+    /* do margini alla colonna centrale per spaziarla */
     margin: 0 5%;
 }
 
@@ -392,21 +395,54 @@ a {
     color: white;
     height: 800px;
     padding: 100px 0;
-    background-image: linear-gradient(#00aeb4, #00bda5);
+    background-image: linear-gradient(45deg, #00a4bd, #00bda5);
 }
 
-#sect3 .container h2 {
+#sect3-title {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#sect3-title h2 {
     font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0 60px;
     text-align: center;
-    padding: 0 140px;
 }
 
-#sect3 .container p {
+#sect3-title p {
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#sect3-table h2 {
+    font-size: 38px;
+    margin: 10px 0;
     font-weight: bold;
     text-align: center;
-    padding: 0 100px;
+}
+
+#sect3-table p {
+    line-height: 1.5;
+    font-size: 13px;
+    text-align: center;
+}
+
+#sect3-table #square1 h2:after,
+#sect3-table #square2 h2:after,
+#sect3-table #square3 h2:after,
+#sect3-table #square5 h2:after,
+#sect3-table #square7 h2:after,
+#sect3-table #square8 h2:after {
+    content: "+";
+    font-size: 16px;
+    font-weight: normal;
+    /* riposiziono  il simbolo un po più in alto per centrarlo */
+    position: relative;
+    bottom: 8px;
 }
 
 .square {
@@ -422,14 +458,45 @@ a {
     height: 33px;
 }
 
-.square p {
-    font-family: 'Lato', sans-serif;
-    font-size: 10px;
+#square1 {
+    border-left: 0;
+    border-top: 0;
+}
+
+#square2, #square3 {
+    border-top: 0;
+    border-left: 0;
+}
+
+#square4 {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+#square5 {
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#square6, #square7 {
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+#square8 {
+    border: 0;
 }
 
 /* ******************************************** */
 /* ****************** sect4 ******************* */
 /* ******************************************** */
+#sect4 {
+    /* background-color: white; */
+}
+
 /* ******************************************** */
 /* ****************** sect5 ******************* */
 /* ******************************************** */
