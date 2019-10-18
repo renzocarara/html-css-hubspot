@@ -30,7 +30,7 @@ a {
     clear: both;
 }
 
-#chat_icon {
+#chat-icon {
     background-color: #425b76;
     position: fixed;
     right: 15px;
@@ -45,7 +45,7 @@ a {
     box-shadow: 0 1px 6px rgba(0, 0, 0, .1), 0 2px 24px rgba(0, 0, 0, .2);
 }
 
-#chat_icon:hover {
+#chat-icon:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, .2), 0 4px 28px rgba(0, 0, 0, .3);
 }
 
@@ -64,12 +64,17 @@ a {
 .btn {
     color: #ffffff;
     background-color: #ff7a59;
-    border: 1px solid;
+    border: 1px solid #ff7a59;
     border-radius: 3px;
     cursor: pointer;
     font-weight: bold;
     /* con il bold testo lungo tende a disposrsi su 2 linee */
     white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: #ff8f73;
+    border: 1px solid #ff8f73;
 }
 
 /* contenitore generico che mi dimensiona "il contenuto" all'80% della larghezza */
@@ -86,7 +91,7 @@ a {
 /* ******************************************** */
 /* *************** navbar upper *************** */
 /* ******************************************** */
-#navbar_upper {
+#navbar-upper {
     width: 100%;
     background-color: #f9f9f9;
     height: 74px;
@@ -97,7 +102,7 @@ a {
     z-index: 10;
 }
 
-#upper_left {
+#upper-left {
     float: left;
     line-height: 74px;
 }
@@ -128,17 +133,17 @@ a {
     color: #cbd6e2;
 }
 
-#upper_left span:last-child {
+#upper-left span:last-child {
     padding-left: 15px;
     font-size: 14px;
 }
 
-#upper_right {
+#upper-right {
     float: right;
     line-height: 74px;
 }
 
-#upper_right span i {
+#upper-right span i {
     color: #34b5ca;
     padding: 5px;
     cursor: pointer;
@@ -146,20 +151,24 @@ a {
 }
 
 /* spazio i 2 bottoni  login e cta*/
-#upper_right span:nth-child(2) {
+#upper-right span:nth-child(2) {
     padding-right: 10px;
 }
 
 /* stilo il bottone di login*/
-#upper_right span:nth-child(2) button {
+#upper-right span:nth-child(2) button {
     background-color: #ffffff;
     color: #ff7a59;
     border: 1px solid #ff7a59;
     font-weight: normal;
 }
 
+#upper-right span:nth-child(2) button:hover {
+    background-color: #fff8f6;
+}
+
 /* bottone cta a fianco al login */
-#upper_right span:nth-child(3) button {
+#upper-right span:nth-child(3) button {
     font-weight: normal;
 }
 
@@ -171,51 +180,51 @@ a {
 /* ******************************************** */
 /* *************** navbar inner *************** */
 /* ******************************************** */
-#navbar_inner {
+#navbar-inner {
     /* setto un top margin per coprire  lo spazio lasciato libero dalla barra fissa */
     margin-top: 74px;
     background-color: #ffffff;
     height: 82px;
 }
 
-#inner_left {
+#inner-left {
     float: left;
 }
 
-#inner_left img {
+#inner-left img {
     /* sposto l'immagine logo verso il basso per centrarla verticalmente  */
     position: relative;
     top: 26px;
 }
 
-#inner_right {
+#inner-right {
     float: right;
     line-height: 82px;
 }
 
-#inner_right ul {
+#inner-right ul {
     margin: 0;
 }
 
-#inner_right ul li {
+#inner-right ul li {
     display: inline-block;
     padding: 0 10px;
     margin: 0;
     font-weight: bold;
 }
 
-#inner_right ul li {
+#inner-right ul li {
     cursor: pointer;
 }
 
-#inner_right span {
+#inner-right span {
     color: #7c98b6;
     padding-right: 15px;
     padding-left: 10px;
     font-size: 18px;
 }
 
-#inner_right a {
+#inner-right a {
     padding-right: 15px;
 }
 
@@ -240,21 +249,21 @@ a {
     font-weight: 700;
 }
 
-.jumbo_wrapper {
+.jumbo-wrapper {
     width: 50%;
     padding-top: 40px;
 }
 
-.jumbo_wrapper p {
+.jumbo-wrapper p {
     line-height: 1.5;
 }
 
-.jumbo_wrapper p:last-child {
+.jumbo-wrapper p:last-child {
     font-size: 12px;
     line-height: 1.5;
 }
 
-#cta_wrapper {
+#cta-wrapper {
     width: 40%;
 }
 
@@ -306,7 +315,7 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-.sect2_row {
+.sect2-row {
     margin-bottom: 50px;
     padding: 30px;
 }
@@ -325,7 +334,7 @@ a {
     width: 60%;
 }
 
-.sect2_col {
+.sect2-col {
     float: left;
     width: 30%;
     background-color: white;
@@ -374,7 +383,7 @@ a {
     content: "";
 }
 
-.sect2_col img {
+.sect2-col img {
     width: 234px;
     height: 150px;
 }
@@ -383,7 +392,7 @@ a {
     margin-bottom: 80px;
 }
 
-.sect2_col {
+.sect2-col {
     display: inline-block;
     text-align: center;
 }
@@ -669,21 +678,27 @@ footer li {
 
 .footer-col button {
     background-color: #ffffff;
+    border: 1px solid #ffffff;
     color: #33475b;
     font-weight: normal;
+}
+
+.footer-col button:hover {
+    background-color: #ebedef;
+    border: 1px solid #ebedef;
 }
 
 footer ul {
     padding-left: 0;
 }
 
-#footer_languages {
+#footer-languages {
     text-align: center;
     border-bottom: 1px solid #7c98b6;
     padding: 25px 0;
 }
 
-#footer_languages li {
+#footer-languages li {
     text-align: center;
     display: inline-block;
 }
