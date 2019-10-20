@@ -92,9 +92,9 @@ a {
 /* *************** navbar upper *************** */
 /* ******************************************** */
 #navbar-upper {
+    height: 74px;
     width: 100%;
     background-color: #f9f9f9;
-    height: 74px;
     border-bottom: 1px solid #cbd6e2;
     /* imposto la navbar in modo che rimanga fissa */
     position: fixed;
@@ -107,33 +107,38 @@ a {
     line-height: 74px;
 }
 
-#wrapper:hover {
+#three-ele-wrapper:hover {
     cursor: pointer;
 }
 
-/* spazio e stilo i 5 elementi della barra di sinistra */
-#wrapper span:nth-child(1) {
-    /* color: #33475b; */
+/* per dare continuità con dropdown menu sul hover  */
+#three-ele-wrapper {
+    padding-bottom: 20px;
 }
 
-#wrapper span:nth-child(2) {
+/* spazio e stilo i 5 elementi della barra di sinistra */
+/* testo "English" */
+#three-ele-wrapper span:nth-child(2) {
     padding-left: 10px;
     font-size: 14px;
 }
 
-#wrapper span:nth-child(3) {
+/* down caret */
+#three-ele-wrapper span:nth-child(3) {
     color: #7c98b6;
-    padding-right: 15px;
+    padding: 0 15px;
     font-size: 18px;
 }
 
-#wrapper+span {
+/* simbolo pipe */
+#pipe {
     font-weight: 900;
     font-size: 22px;
     color: #cbd6e2;
 }
 
-#upper-left span:last-child {
+/* testo "Contact us" */
+#contact {
     padding-left: 15px;
     font-size: 14px;
 }
@@ -184,7 +189,7 @@ a {
     /* setto un top margin per coprire  lo spazio lasciato libero dalla barra fissa */
     margin-top: 74px;
     background-color: #ffffff;
-    height: 82px;
+    /* height: 82px; */
 }
 
 #inner-left {
@@ -728,4 +733,57 @@ footer a:hover {
 
 #footer-legal-right {
     float: right;
+}
+
+/* ******************************************** */
+/* *************** dropdown menu ************** */
+/* ******************************************** */
+.dropdown-menu {
+    background-color: white;
+    border: 1px solid #cbd6e2;
+    border-radius: 1px;
+    box-shadow: 0 1px 24px rgba(45, 62, 80, 0.12);
+    position: absolute;
+    top: 60px;
+}
+
+/* creo un quadratino, lo ruoto di 45° e lo posiziono */
+.dropdown-menu:before {
+    content: "";
+    background-color: white;
+    border-top: 1px solid #cbd6e2;
+    border-left: 1px solid #cbd6e2;
+    border-radius: 2px 0 0;
+    position: absolute;
+    top: -9px;
+    left: 90px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+#three-ele-wrapper:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul {
+    padding-left: 0;
+}
+
+.dropdown-menu ul li {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 2;
+    padding: 0 45px 0 15px;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: #e5f5f8;
+    cursor: pointer;
 }
