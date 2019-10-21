@@ -787,3 +787,40 @@ footer a:hover {
     background-color: #e5f5f8;
     cursor: pointer;
 }
+
+#chat-bubble {
+    width: 240px;
+    height: 130px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 110px;
+    right: 35px;
+}
+
+#chat-bubble:after {
+    content: url(images/initialMessageBubbleTail.svg);
+    position: absolute;
+    top: 126px;
+    left: 160px;
+    width: 35px;
+    height: 35px;
+}
+
+#chat-bubble:before {
+    content: url(images/bot-avatar.png);
+    background-color: white;
+    position: absolute;
+    top: -23px;
+    left: 96px;
+}
+
+/* simbolo "X" */
+#chat_close:before {
+    content: "\2716";
+    position: absolute;
+    top: 10px;
+    left: 215px;
+}
